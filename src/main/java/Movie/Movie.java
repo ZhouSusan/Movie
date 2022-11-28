@@ -15,7 +15,7 @@ public class Movie {
     private String ageRestrictions;
     private List<String> actors;
 
-    public Movie(int movieId, String title, String genre, String director, int productionYear, int rating, int runTime, String ageRestrictions) {
+    public Movie(int movieId, String title, String genre, String director, int productionYear, double rating, int runTime, String ageRestrictions) {
         this.movieId = movieId;
         this.title = title;
         this.genre = genre;
@@ -26,6 +26,38 @@ public class Movie {
         this.ageRestrictions = ageRestrictions;
 
         actors = new ArrayList<String>();
+    }
+
+    public int getMovie() {
+        return this.movieId;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+
+    public String getGenre() {
+        return this.genre;
+    }
+
+    public String getDirector() {
+        return this.director;
+    }
+
+    public int getProductionYear() {
+        return this.productionYear;
+    }
+
+    public double getRating() {
+        return this.rating;
+    }
+
+    public int getRunTime() {
+        return this.runTime;
+    }
+
+    public String getAgeRestrictions() {
+        return this.ageRestrictions;
     }
 
     public void addActor(String actor) {
@@ -43,6 +75,5 @@ public class Movie {
             System.out.printf("Actor has been removed from list.");
         }
     }
-
 
 }
