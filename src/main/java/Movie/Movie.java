@@ -76,4 +76,14 @@ public class Movie {
         }
     }
 
+    public void displayActors() {
+        for (String actor : actors) {
+            System.out.println(actor);
+        }
+    }
+
+    public String getMovieInfo() {
+        return "Title : " + getTitle() + "Genre: " + getGenre() + " ,Director: " + getDirector() + ", Year: " + getProductionYear()
+                + ", Rating" + getRating() + "Duration Of Movie: " + getDirector() + "\n";
+    }
 }
