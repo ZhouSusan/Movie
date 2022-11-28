@@ -27,4 +27,22 @@ public class Movie {
 
         actors = new ArrayList<String>();
     }
+
+    public void addActor(String actor) {
+        if (!actors.contains(actor)) {
+            this.actors.add(actor);
+        } else {
+            System.out.printf("%s has been successfully added");
+        }
+    }
+
+    public void removeActor(String actor) {
+        if (actors.contains(actor)) {
+            this.actors.remove(actor);
+        } else {
+            System.out.printf("Actor has been removed from list.");
+        }
+    }
+
+
 }
