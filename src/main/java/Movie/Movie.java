@@ -157,8 +157,8 @@ public class Movie implements Comparable<Movie> {
     }
 
     public String getMovieInfo() {
-        return "Title : " + getTitle() + "Genre: " + getGenre() + " ,Director: " + getDirector() + ", Year: " + getProductionYear()
-                + ", Rating" + getRating() + "Duration Of Movie: " + getDirector() + "\n";
+        return "Title: " + getTitle() + ", Genre: " + getGenre() + ", Director: " + getDirector() + ", Year: " + getProductionYear()
+                + ", Rating " + getRating() + ", Duration Of Movie: " + getDirector() + "\n";
     }
 
 }

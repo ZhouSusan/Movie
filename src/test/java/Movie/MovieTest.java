@@ -159,7 +159,7 @@ class MovieTest {
         movie1.addActor("Bella Smith");
         movie1.addActor("Georgina Ryan");
         movie1.addActor("Test name");
-        String expected = "Title : TwilightGenre: Sci-Fi ,Director: Paul Smith, Year: 2008, Rating3.5Duration Of Movie: Paul Smith\n";
+        String expected = "Title: Twilight, Genre: Sci-Fi, Director: Paul Smith, Year: 2008, Rating 3.5, Duration Of Movie: Paul Smith\n";
         assertEquals(expected, movie1.getMovieInfo());
     }
 }
